@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Flavors&family=Love+Light&family=Monofett&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.banner{
+  background: rgba(255, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+.banner a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 25, 254, 0.5), rgba(255, 0, 0, 0.5)), url("https://i0.wp.com/picjumbo.com/wp-content/uploads/valentine-heart-drawn-with-crayons-space-for-text-free-photo.jpeg?w=600&quality=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 7rem;
+  font-family: "Carattere", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hero h3 {
+  margin-top: 8px;
+  font-size: 1.5rem;
+  color: yellow;
+}
+
+.gallery-section h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 80px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.main-form {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 100px;
+  background-image: linear-gradient(rgba(27, 28, 34, 0.144), rgba(181, 170, 22, 0.221)), 
+  url('https://t3.ftcdn.net/jpg/08/49/46/80/360_F_849468039_xVYudYV6NBVDUoKolpwhSTsDa53m7nvD.jpg');
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  background-color: #a58d77;
+}
+
+
+footer {
+  display: flex;
+  background: rgba(255, 0, 0, 0.5);
+  padding: 10px;
+  gap: 6px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .hero {
+      height: 500px;
+      padding: 20px;
+  }
+  
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+  
+  .hero h3 {
+      font-size: 1.2rem;
+  }
+  
+  .gallery {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .gallery img {
+      max-width: 90%;
+  }
+  
+  form {
+      width: 100%;
+  }
+  
+  input, textarea {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+      height: 400px;
+  }
+  
+  .hero h1 {
+      font-size: 2rem;
+  }
+  
+  .hero h3 {
+      font-size: 1rem;
+  }
+  
+  .gallery-section h2 {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+      width: 95%;
+      padding: 15px;
+  }
+}
